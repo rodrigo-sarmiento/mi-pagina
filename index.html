@@ -8,44 +8,51 @@
 </head>
 <body>
 
-  <header>
-    <div class="layout">
+<div class="layout">
+  <!-- Columna izquierda -->
   <div class="titulo-lateral">
     <h1><a href="#">Rodrigo Sarmiento</a></h1>
     <p>Esta es mi página personal. Acá muestro mis proyectos, conocimientos y habilidades. La iré actualizando con el tiempo.</p>
-  </div>    
-  </header>
+  </div>
 
-<main>
-  <section id="arquitectura">
-    <h2><a href="#arquitectura">Arquitectura</a></h2>
-    <p>Mis proyectos.</p>
-  </section>
+  <!-- Columna derecha -->
+  <div class="contenido-principal">
+    <header>
+      <!-- Podés agregar navegación si querés -->
+    </header>
 
-  <section id="fotografia">
-    <h2><a href="#fotografia">Fotografía</a></h2>
-    <p>Mis trabajos.</p>
-  </section>
+    <main>
+      <section id="arquitectura">
+        <h2><a href="#arquitectura">Arquitectura</a></h2>
+        <p>Mis proyectos.</p>
+      </section>
 
-  <section id="programacion">
-    <h2><a href="#programacion">Programación</a></h2>
-    <p>Proyectos en desarrollo, ideas y código fuente.</p>
-  </section>
+      <section id="fotografia">
+        <h2><a href="#fotografia">Fotografía</a></h2>
+        <p>Mis trabajos.</p>
+      </section>
 
-  <section id="blog">
-    <h2><a href="#blog">Blog</a></h2>
-    <p>Bitácoras de proyecto.</p>
-  </section>
+      <section id="programacion">
+        <h2><a href="#programacion">Programación</a></h2>
+        <p>Proyectos en desarrollo, ideas y código fuente.</p>
+      </section>
 
-  <button onclick="mostrarMensaje()">Ver mensaje</button>
-</main>
+      <section id="blog">
+        <h2><a href="#blog">Blog</a></h2>
+        <p>Bitácoras de proyecto.</p>
+      </section>
 
-  <script>
-    function mostrarMensaje() {
-      alert("Gracias por visitar mi portfolio. ¡Seguimos creando!");
-    }
-  </script>
+      <button onclick="mostrarMensaje()">Ver mensaje</button>
+    </main>
+  </div>
+</div>
 
+<script>
+  function mostrarMensaje() {
+    alert("Gracias por visitar mi portfolio. ¡Seguimos creando!");
+  }
+  
+</script>
 </body>
 </html>
 
