@@ -22,9 +22,8 @@ body {
 }
 
 .titulo-lateral h1 {
-  transform: rotate(90deg);
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 4rem;
+  margin-bottom: 4rem;
 }
 
 .titulo-lateral a {
