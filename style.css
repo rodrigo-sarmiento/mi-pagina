@@ -13,6 +13,18 @@ header {
   text-align: center;
 }
 
+h2 a {
+  color: #003366;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+h2 a:hover {
+  color: #007acc;
+  border-bottom: 2px solid #007acc;
+}
+
 nav {
   background-color: #005599;
 }
