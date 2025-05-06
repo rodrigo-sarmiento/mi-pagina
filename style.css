@@ -44,6 +44,17 @@ header {
   padding: 2rem;
   text-align: center;
 }
+h1 a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+h1 a:hover {
+  color: white;
+  border-bottom: 2px solid #007acc;
+}
 
 h2 a {
   color: #003366;
