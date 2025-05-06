@@ -14,10 +14,9 @@ header {
 }
 
 h2 a {
-  color: #003366;
+  color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
+  border-bottom: none;
 }
 
 h2 a:hover {
