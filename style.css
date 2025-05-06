@@ -22,7 +22,7 @@ body {
 }
 
 .titulo-lateral h1 {
-  writing-mode: vertical-rl;
+  writing-mode: horizontal-rl;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
