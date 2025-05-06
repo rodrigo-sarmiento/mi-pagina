@@ -23,7 +23,6 @@ body {
 
 .titulo-lateral h1 {
   writing-mode: vertical-rl;
-  transform: rotate(180deg);
   font-size: 2rem;
   margin-bottom: 2rem;
 }
