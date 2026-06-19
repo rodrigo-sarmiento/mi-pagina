@@ -6,20 +6,105 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <a href="index.html">← Volver al inicio</a>
-    <h1>Arquitectura</h1>
+  <header class="barra-navegacion">
+    <div class="logo-texto-temporal">
+      <a href="index.html">
+        <img src="img/Logo.webp" alt="Logo Estudio Rodrigo Sarmiento" class="logo-img" />
+        <span>Rodrigo Sarmiento</span>
+      </a>
+    </div>
+    <nav class="menu-enlaces" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="remodelaciones.html">Remodelaciones</a></li>
+        <li><a href="tasaciones.html">Tasaciones</a></li>
+        <li><a href="arquitectura.html" class="activo">Investigación</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <section class="proyecto">
-      <h2>Nombre del Proyecto 1</h2>
-      <p>Descripción breve del proyecto, ubicación, año, etc.</p>
-    </section>
 
-    <section class="proyecto">
-      <h2>Nombre del Proyecto 2</h2>
-      <p>Otra descripción breve.</p>
-    </section>
-  </main>
+  <div class="layout">
+    <aside class="titulo-lateral">
+      <h1>Investigación</h1>
+      <p>Registro de procesos, experimentación y metodologías en la arquitectura. Nos interesa documentar y compartir aprendizajes sobre diseño, construcción y la relación entre el espacio y sus usuarios.</p>
+      <p><strong>Áreas de investigación:</strong></p>
+      <ul style="margin-left: 1.5rem; line-height: 1.8;">
+        <li>Procesos de diseño innovadores</li>
+        <li>Sostenibilidad y eficiencia</li>
+        <li>Tecnologías constructivas</li>
+        <li>Investigación de mercado</li>
+      </ul>
+    </aside>
+
+    <div class="contenido-principal">
+      <main>
+        
+        <section class="proyecto">
+          <h2>Revista Habitat Inclusivo</h2>
+          <p><strong>Una mirada sobre los territorios excluidos.</strong> Publicación académica que aborda las problemáticas de la vulnerabilidad urbana, la exclusión social y las metodologías de intervención arquitectónica comunitaria.</p>
+          <a href="https://drive.google.com/file/d/1fA--U4tgQzVhv2JushviEIiVjtkY1hcs/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="enlace-investigacion">Leer publicación (PDF)</a>
+           <img src="img/HI.webp" alt="Portada HI" class="proyecto-card_2"/>
+        </section>
+      
+
+        <section class="proyecto">
+          <h2>Geocercas Viales Analytics</h2>
+          <p>Análisis de datos espaciales y geocercas aplicadas a la analítica vial. Un estudio enfocado en optimizar la comprensión de flujos y dinámicas urbanas.</p>
+          <a href="https://github.com/rodrigo-sarmiento/Geocercas_Viales_Analytics" target="_blank" rel="noopener noreferrer" class="enlace-investigacion">Ver repositorio en GitHub</a>
+           <img src="img/Geocercas.webp" alt="Geocercas Viales Analytics" class="proyecto-card_2"/>
+        </section>
+
+        <section class="proyecto">
+          <h2>Mercado Inmobiliario CH</h2>
+          <p>Investigación y procesamiento de datos vinculados al mercado inmobiliario, herramientas clave para el diagnóstico territorial y la toma de decisiones en proyectos de arquitectura.</p>
+          <a href="https://github.com/rodrigo-sarmiento/Mercado_inmobiliario_ch" target="_blank" rel="noopener noreferrer" class="enlace-investigacion">Ver repositorio en GitHub</a>
+           <img src="img/Mercado.webp" alt="Mercado Inmobiliario CH" class="proyecto-card_2"/>
+        </section>
+      </main>
+    </div>
+  </div>
+
+        
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <strong>Estudio Rodrigo Sarmiento</strong>
+      </div>
+      <div class="footer-contact">
+        <div>Tel: <a href="tel:+5492214358510">+54 9 221 4358510</a></div>
+        <div>Email: <a href="mailto:arqrodrigosarmiento@gmail.com">arqrodrigosarmiento@gmail.com</a></div>
+      </div>
+      <div class="footer-map">
+        <!-- Reemplazá el src por la ubicación real del estudio -->
+        <iframe title="Ubicación del estudio" src="https://www.openstreetmap.org/export/embed.html?bbox=-57.58%2C-38.05%2C-57.50%2C-37.98&amp;layer=mapnik" style="border:0; width:220px; height:80px;"></iframe>
+        <div class="map-link"><a href="https://maps.app.goo.gl/8kLvw6YTjRndmf6EA" target="_blank" rel="noopener">Ver en mapa</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const footer = document.querySelector('.site-footer');
+      if (!footer) return;
+      function checkFooter(){
+        if (window.scrollY > 150) {
+          if (!footer.classList.contains('show')) {
+            footer.classList.add('show');
+            document.body.style.paddingBottom = footer.offsetHeight + 'px';
+          }
+        } else {
+          if (footer.classList.contains('show')) {
+            footer.classList.remove('show');
+            document.body.style.paddingBottom = '';
+          }
+        }
+      }
+      window.addEventListener('scroll', checkFooter, { passive: true });
+      checkFooter();
+    })();
+  </script>
 </body>
 </html>

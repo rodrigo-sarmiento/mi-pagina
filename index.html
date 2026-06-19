@@ -6,57 +6,130 @@
   <title>Mi portfolio - Rodrigo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<div class="layout">
-  <!-- Columna izquierda -->
-  <div class="titulo-lateral">
-    <h1><a href="https://www.linkedin.com/in/rodrigoasarmiento/" target="_blank">Rodrigo Sarmiento</a></h1>
-    <p>Esta es mi página personal. Acá muestro mis proyectos, conocimientos y habilidades. La iré actualizando con el tiempo.</p>
-     <p><strong>Tel:</strong> <a href="tel:+54 9 221 4358510">+54 9 221 435 8510</a></p>
-  <p><strong>Email:</strong> <a href="mailto:arqrodrigosarmiento@gmail.com">arqrodrigosarmiento@gmail.com</a></p>
-  </div>
+  <header class="barra-navegacion">
+    <div class="logo-texto-temporal">
+      <a href="index.html">
+        <img src="img/Logo.webp" alt="Logo Estudio Rodrigo Sarmiento" class="logo-img" />
+        <span>Rodrigo Sarmiento</span>
+      </a>
+    </div>
+    <nav class="menu-enlaces" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="remodelaciones.html">Remodelaciones</a></li>
+        <li><a href="tasaciones.html">Tasaciones</a></li>
+        <li><a href="arquitectura.html">Investigación</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="titulo-lateral">
+    <h1><a target="_blank">Rodrigo Sarmiento</a></h1>
+    <p>Entiendo la arquitectura como una herramienta 
+      para transformar ideas en espacios habitables, 
+      eficientes y duraderos. Mi práctica profesional 
+      abarca el proyecto, la dirección de obra y la tasación 
+      de inmuebles, integrando diseño, técnica y gestión en cada 
+      encargo. Trabajo en proyectos de escala residencial 
+      y comercial, con especial atención a la calidad constructiva, 
+      la viabilidad económica y las necesidades específicas de 
+      cada cliente.</p>
+
+    <div class="contacto-iconos">
+        <a href="tel:+5492214358510" title="Llamar" aria-label="Teléfono">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+        <a href="mailto:arqrodrigosarmiento@gmail.com" title="Enviar Email" aria-label="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" title="Instagram" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/rodrigoasarmiento/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+    </div>
+    </aside>
 
   <!-- Columna derecha -->
   <div class="contenido-principal">
-    <header>
-      <!-- Podés agregar navegación si querés -->
-    </header>
-
     <main>
-      <section id="arquitectura">
-        <h2><a href="arquitectura.html">Arquitectura</a></h2>
-        <p>Mis proyectos.</p>
-      </section>
-
-      <section id="tasaciones">
-        <h2><a href="tasaciones.html">Tasaciones</a></h2>
-        <p>Mis trabajos.</p>
+     <section id="proyectos">
+        <h2><a href="proyectos.html">Proyectos</a></h2>
+        <p>Diseño y Dirección de Proyectos.</p>
       </section>
 
       <section id="remodelaciones">
         <h2><a href="remodelaciones.html">Remodelaciones</a></h2>
-        <p>Proyectos en desarrollo, ideas y código fuente.</p>
+        <p>Transformación y refuncionalización de espacios.</p>
       </section>
+     
+      <section id="tasaciones">
+        <h2><a href="tasaciones.html">Tasaciones</a></h2>
+        <p>Análisis integral y valoración del mercado inmobiliario.</p>
+      </section>    
 
-      <section id="proyectos">
-        <h2><a href="proyectos.html">Proyectos</a></h2>
-        <p>Bitácoras de proyecto.</p>
+      <section id="arquitectura">
+        <h2><a href="arquitectura.html">Investigacion</a></h2>
+        <p>Registro de procesos, experimentación y metodologías.</p>
       </section>
-
+      
       <button onclick="mostrarMensaje()">Ver mensaje</button>
     </main>
   </div>
 </div>
-<div id="reloj"></div>
 
 <script src="app.js"></script>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <strong>Estudio Rodrigo Sarmiento</strong>
+      </div>
+      <div class="footer-contact">
+        <div>Tel: <a href="tel:+5492214358510">+54 9 221 4358510</a></div>
+        <div>Email: <a href="mailto:arqrodrigosarmiento@gmail.com">arqrodrigosarmiento@gmail.com</a></div>
+      </div>
+      <div class="footer-map">
+        <!-- Reemplazá el src por la ubicación real del estudio -->
+        <iframe title="Ubicación del estudio" src="https://www.openstreetmap.org/export/embed.html?bbox=-57.58%2C-38.05%2C-57.50%2C-37.98&amp;layer=mapnik" style="border:0; width:220px; height:80px;"></iframe>
+        <div class="map-link"><a href="https://maps.app.goo.gl/8kLvw6YTjRndmf6EA" target="_blank" rel="noopener">Ver en mapa</a></div>
+      </div>
+    </div>
+  </footer>
 
 <script>
   function mostrarMensaje() {
     alert("Gracias por visitar mi portfolio. ¡Seguimos creando!");
   }
   
+</script>
+<script>
+  (function(){
+    const footer = document.querySelector('.site-footer');
+    if (!footer) return;
+    function checkFooter() {
+      if (window.scrollY > 150) {
+        if (!footer.classList.contains('show')) {
+          footer.classList.add('show');
+          document.body.style.paddingBottom = footer.offsetHeight + 'px';
+        }
+      } else {
+        if (footer.classList.contains('show')) {
+          footer.classList.remove('show');
+          document.body.style.paddingBottom = '';
+        }
+      }
+    }
+    window.addEventListener('scroll', checkFooter, { passive: true });
+    // initial state
+    checkFooter();
+  })();
 </script>
 </body>
 </html>

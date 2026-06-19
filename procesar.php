@@ -22,16 +22,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // 4. Armamos la instrucción SQL para insertar estos datos en la tabla "tasaciones"
     $sql = "INSERT INTO tasaciones (nombre, apellido, mail, telefono, tipo, operacion, ambientes, localidad, barrio, direccion, superficie_total, superficie_cubierta) 
             VALUES ('$nombre', '$apellido', '$mail', '$telefono', '$tipo', '$operacion', '$ambientes', '$localidad', '$barrio', '$direccion', $superficie_total, $superficie_cubierta)";
+// ... (todo el código anterior de procesar.php queda igual)
 
     // 5. Ejecutamos la instrucción y comprobamos si fue un éxito
     if ($conexion->query($sql) === TRUE) {
-        echo "<h2>¡Excelente! La solicitud de tasación se ha guardado correctamente.</h2>";
-        echo "<a href='index.html'>← Volver al formulario</a>";
+        // En lugar de texto HTML, inyectamos código JavaScript
+        echo "<script>
+            alert('¡Excelente! La solicitud de tasación se ha guardado correctamente.');
+            window.location.href = 'index.html';
+        </script>";
     } else {
-        echo "Hubo un error al guardar los datos: " . $conexion->error;
+        echo "<script>
+            alert('Hubo un error al guardar los datos: " . addslashes($conexion->error) . "');
+            window.location.href = 'index.html';
+        </script>";
     }
 
-    // 6. Cerramos la conexión por prolijidad
+    // 6. Cerramos la conexión
     $conexion->close();
 }
 ?>
+ 

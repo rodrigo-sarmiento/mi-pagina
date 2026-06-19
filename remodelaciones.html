@@ -6,15 +6,87 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <a href="index.html">← Volver al inicio</a>
-    <h1>Proyectos de Programación</h1>
+  <header class="barra-navegacion">
+    <div class="logo-texto-temporal">
+      <a href="index.html">
+        <img src="img/Logo.webp" alt="Logo Estudio Rodrigo Sarmiento" class="logo-img" />
+        <span>Rodrigo Sarmiento</span>
+      </a>
+    </div>
+    <nav class="menu-enlaces" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="remodelaciones.html" class="activo">Remodelaciones</a></li>
+        <li><a href="tasaciones.html">Tasaciones</a></li>
+        <li><a href="arquitectura.html">Investigación</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <ul>
-      <li><a href="https://github.com/usuario/proyecto1" target="_blank">Proyecto 1 - App de tareas</a></li>
-      <li><a href="https://github.com/usuario/proyecto2" target="_blank">Proyecto 2 - Portfolio web</a></li>
-    </ul>
-  </main>
+
+  <div class="layout">
+    <aside class="titulo-lateral">
+      <h1>Remodelaciones</h1>
+      <p>Transformación y refuncionalización de espacios existentes. Nuestro enfoque en remodelaciones combina optimización de recursos con innovación en diseño, creando espacios mejorados que potencian el valor de su propiedad.</p>
+      <p><strong>Servicios de remodelación:</strong></p>
+      <ul style="margin-left: 1.5rem; line-height: 1.8;">
+        <li>Análisis estructural y funcional</li>
+        <li>Propuestas de optimización</li>
+        <li>Ejecución y gestión de obra</li>
+        <li>Materiales y acabados de calidad</li>
+      </ul>
+    </aside>
+
+    <div class="contenido-principal">
+      <main>
+        <section>
+          <h2>Proyectos de Remodelación</h2>
+          <ul>
+            <li><a href="https://github.com/usuario/proyecto1" target="_blank">Proyecto 1 - Remodelación Residencial</a></li>
+            <li><a href="https://github.com/usuario/proyecto2" target="_blank">Proyecto 2 - Remodelación Comercial</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="img/Logo.webp" alt="Logo Estudio Rodrigo Sarmiento" class="logo-img" />
+        <strong>Estudio Rodrigo Sarmiento</strong>
+      </div>
+      <div class="footer-contact">
+        <div>Tel: <a href="tel:+5492214358510">+54 9 221 4358510</a></div>
+        <div>Email: <a href="mailto:arqrodrigosarmiento@gmail.com">arqrodrigosarmiento@gmail.com</a></div>
+      </div>
+      <div class="footer-map">
+        <iframe title="Ubicación del estudio" src="https://www.openstreetmap.org/export/embed.html?bbox=-57.58%2C-38.05%2C-57.50%2C-37.98&amp;layer=mapnik" style="border:0; width:220px; height:80px;"></iframe>
+        <div class="map-link"><a href="https://maps.app.goo.gl/8kLvw6YTjRndmf6EA" target="_blank" rel="noopener">Ver en mapa</a></div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    (function(){
+      const footer = document.querySelector('.site-footer');
+      if (!footer) return;
+      function checkFooter(){
+        if (window.scrollY > 150) {
+          if (!footer.classList.contains('show')) {
+            footer.classList.add('show');
+            document.body.style.paddingBottom = footer.offsetHeight + 'px';
+          }
+        } else {
+          if (footer.classList.contains('show')) {
+            footer.classList.remove('show');
+            document.body.style.paddingBottom = '';
+          }
+        }
+      }
+      window.addEventListener('scroll', checkFooter, { passive: true });
+      checkFooter();
+    })();
+  </script>
 </body>
 </html>
