@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tasaciones - Rodrigo Sarmiento</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,7 +28,7 @@
   <div class="layout">
     <aside class="titulo-lateral">
       <h1>Tasaciones</h1>
-      <p>Realizó análisis integral y valoración del mercado inmobiliario. Nuestros servicios de tasación están fundamentados en una exhaustiva investigación de mercado, análisis comparativos y una profunda experiencia en el sector inmobiliario.</p>
+      <p>Realizó análisis integral y valoración del mercado inmobiliario. Nuestros servicios de tasación están fundamentados en una exhaustive investigación de mercado, análisis comparativos y una profunda experiencia en el sector inmobiliario.</p>
       <p><strong>¿Qué incluye nuestro servicio?</strong></p>
       <ul style="margin-left: 1.5rem; line-height: 1.8;">
         <li>Inspección detallada de la propiedad</li>
@@ -43,94 +44,94 @@
           <h2>Solicitud de Tasación</h2>
           <p>Por favor, complete el siguiente formulario con sus datos y las características de la propiedad.</p>
           
-          <form action="procesar.php" method="POST">
+          <form action="https://script.google.com/macros/s/AKfycbwFFu6zy2OdcRnDfo05vqE9PXlXkARn-IS_9OWSVY8ySuq1ZiZZbac__WWsuPa3g9jEXw/exec" method="POST">
       
-      <fieldset>
-        <legend>Datos Personales</legend>
-        
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
-        <br><br>
+            <fieldset>
+              <legend>Datos Personales</legend>
+              
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <br><br>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required />
-        <br><br>
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required />
+              <br><br>
 
-        <label for="mail">Correo Electrónico:</label>
-        <input type="email" id="mail" name="mail" required />
-        <br><br>
+              <label for="mail">Correo Electrónico:</label>
+              <input type="email" id="mail" name="mail" required />
+              <br><br>
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required />
-      </fieldset>
-      <br>
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" required />
+            </fieldset>
+            <br>
 
-      <fieldset>
-        <legend>Descripción de la Propiedad</legend>
+            <fieldset>
+              <legend>Descripción de la Propiedad</legend>
 
-        <label for="tipo">Tipo de Propiedad:</label>
-        <select id="tipo" name="tipo" required>
-          <option value="">Seleccione un tipo...</option>
-          <option value="departamento">DEPARTAMENTO</option>
-          <option value="casa">CASA</option>
-          <option value="galpon">GALPON</option>
-          <option value="edificio">EDIFICIO</option>
-          <option value="oficina">OFICINA</option>
-          <option value="negocio">NEGOCIO</option>
-          <option value="local">LOCAL</option>
-          <option value="lote">LOTE</option>
-          <option value="cochera">COCHERA</option>
-          <option value="campo">CAMPO</option>
-          <option value="quinta">QUINTA</option>
-          <option value="loft">LOFT</option>
-        </select>
-        <br><br>
+              <label for="tipo">Tipo de Propiedad:</label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Seleccione un tipo...</option>
+                <option value="departamento">DEPARTAMENTO</option>
+                <option value="casa">CASA</option>
+                <option value="galpon">GALPON</option>
+                <option value="edificio">EDIFICIO</option>
+                <option value="oficina">OFICINA</option>
+                <option value="negocio">NEGOCIO</option>
+                <option value="local">LOCAL</option>
+                <option value="lote">LOTE</option>
+                <option value="cochera">COCHERA</option>
+                <option value="campo">CAMPO</option>
+                <option value="quinta">QUINTA</option>
+                <option value="loft">LOFT</option>
+              </select>
+              <br><br>
 
-        <label for="operacion">Operación:</label>
-        <select id="operacion" name="operacion" required>
-          <option value="">Seleccione una operación...</option>
-          <option value="alquiler">Alquiler</option>
-          <option value="venta">Venta</option>
-          <option value="venta_alquiler">Venta y Alquiler</option>
-          <option value="alquiler_temporario">Alquiler temporario</option>
-        </select>
-        <br><br>
+              <label for="operacion">Operación:</label>
+              <select id="operacion" name="operacion" required>
+                <option value="">Seleccione una operación...</option>
+                <option value="alquiler">Alquiler</option>
+                <option value="venta">Venta</option>
+                <option value="venta_alquiler">Venta y Alquiler</option>
+                <option value="alquiler_temporario">Alquiler temporario</option>
+              </select>
+              <br><br>
 
-        <label for="ambientes">Ambientes:</label>
-        <select id="ambientes" name="ambientes" required>
-          <option value="">Seleccione cantidad...</option>
-          <option value="monoambiente">MONOAMBIENTE</option>
-          <option value="2_ambientes">2 AMBIENTES</option>
-          <option value="3_ambientes">3 AMBIENTES</option>
-          <option value="4_ambientes">4 AMBIENTES</option>
-          <option value="5_ambientes">5 AMBIENTES</option>
-          <option value="6_ambientes">6 AMBIENTES</option>
-          <option value="7_o_mas">7 AMBIENTES O MAS</option>
-          <option value="6_ambientes_5_dormitorios">6 AMBIENTES 5 DORMITORIOS</option>
-          <option value="amb_prueba">AMB PRUEBA</option>
-        </select>
-        <br><br>
+              <label for="ambientes">Ambientes:</label>
+              <select id="ambientes" name="ambientes" required>
+                <option value="">Seleccione cantidad...</option>
+                <option value="monoambiente">MONOAMBIENTE</option>
+                <option value="2_ambientes">2 AMBIENTES</option>
+                <option value="3_ambientes">3 AMBIENTES</option>
+                <option value="4_ambientes">4 AMBIENTES</option>
+                <option value="5_ambientes">5 AMBIENTES</option>
+                <option value="6_ambientes">6 AMBIENTES</option>
+                <option value="7_o_mas">7 AMBIENTES O MAS</option>
+                <option value="6_ambientes_5_dormitorios">6 AMBIENTES 5 DORMITORIOS</option>
+                <option value="amb_prueba">AMB PRUEBA</option>
+              </select>
+              <br><br>
 
-        <label for="localidad">Localidad:</label>
-        <input type="text" id="localidad" name="localidad" required />
-        <br><br>
+              <label for="localidad">Localidad:</label>
+              <input type="text" id="localidad" name="localidad" required />
+              <br><br>
 
-        <label for="barrio">Barrio:</label>
-        <input type="text" id="barrio" name="barrio" required />
-        <br><br>
+              <label for="barrio">Barrio:</label>
+              <input type="text" id="barrio" name="barrio" required />
+              <br><br>
 
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion" required />
-        <br><br>
+              <label for="direccion">Dirección:</label>
+              <input type="text" id="direccion" name="direccion" required />
+              <br><br>
 
-        <label for="superficie_total">Superficie Total (m²):</label>
-        <input type="number" id="superficie_total" name="superficie_total" required />
-        <br><br>
+              <label for="superficie_total">Superficie Total (m²):</label>
+              <input type="number" id="superficie_total" name="superficie_total" required />
+              <br><br>
 
-        <label for="superficie_cubierta">Superficie Cubierta (m²):</label>
-        <input type="number" id="superficie_cubierta" name="superficie_cubierta" required />
-      </fieldset>
-      <br>
+              <label for="superficie_cubierta">Superficie Cubierta (m²):</label>
+              <input type="number" id="superficie_cubierta" name="superficie_cubierta" required />
+            </fieldset>
+            <br>
 
             <button type="submit">Enviar solicitud de Tasación</button>
           </form>
@@ -139,7 +140,6 @@
     </div>
   </div>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-logo">
@@ -150,8 +150,7 @@
         <div>Email: <a href="mailto:arqrodrigosarmiento@gmail.com">arqrodrigosarmiento@gmail.com</a></div>
       </div>
       <div class="footer-map">
-        <!-- Reemplazá el src por la ubicación real del estudio -->
-        <iframe title="Ubicación del estudio" src="https://www.openstreetmap.org/export/embed.html?bbox=-57.58%2C-38.05%2C-57.50%2C-37.98&amp;layer=mapnik" style="border:0; width:220px; height:80px;"></iframe>
+        <iframe title="Ubicación del estudio" src="https://www.openstreetmap.org/export/embed.html?bbox=-57.58%2C-38.05%2C-57.50%2C-37.98&layer=mapnik" style="border:0; width:220px; height:80px;"></iframe>
         <div class="map-link"><a href="https://maps.app.goo.gl/8kLvw6YTjRndmf6EA" target="_blank" rel="noopener">Ver en mapa</a></div>
       </div>
     </div>
